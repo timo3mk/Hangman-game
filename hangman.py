@@ -64,11 +64,11 @@ def game(choice):
     clear_screan()
     game_logic = lg.logic()
     game_word = random.choice(word_bank).lower()
-    first_guess = True
     count = 0 
     
     # Print _ _ _ _
     current_state = '_' * len(game_word) 
+    word = [current_state]
     print(' '.join(current_state))
     
     print(lg.hangman_ascii[0]) # Print hangman[0]
@@ -90,7 +90,7 @@ def game(choice):
                 print(hangman)
             
             current_state = word_update(game_word, guess, current_state)
-            word = [''.join(current_state)]
+            word = [current_state]
             if word[0] == game_word:
                 clear_screan()
                 print('Word : ', word[0])
@@ -110,7 +110,7 @@ def game(choice):
 
         press_enter()
         clear_screan()
-        print(' '.join(word[0])) # Bug...
+        print(' '.join(word[0]))
     
 if __name__ == '__main__':
     game(3)    
