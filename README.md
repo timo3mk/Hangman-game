@@ -30,7 +30,13 @@ Hangman Game/
 ## 🎥 Demo
 
 <p align="center">
-  <img src="assets/Hangman_Demo.gif" width="50%">
+  <kbd>
+    <img src="assets/Hangman_Demo.gif" width="400">
+  </kbd>
+</p>
+
+<p align="center">
+  <em>Quick demo of the Hangman gameplay — guessing letters, ASCII updates, and win/lose logic.</em>
 </p>
 
 ---
