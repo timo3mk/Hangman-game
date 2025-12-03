@@ -25,6 +25,16 @@ Hangman Game/
 └── README.md               # Project documentation
 ```
 
+---
+
+## 🎥 Demo
+
+<p align="center">
+  <img src="assets/Hangman_Demo.gif" width="50%">
+</p>
+
+---
+
 ## 🚀 How to Run
 
 ### 1. Clone the repository
